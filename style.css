@@ -1,0 +1,182 @@
+*
+{
+    box-sizing: border-box;
+    font-family: 'Yu Gothic';
+}
+
+button
+{
+    cursor: pointer;
+}
+
+body
+{
+    margin: 0;
+    background-color: #003049;
+}
+
+a, a:visited
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navigation */
+
+ul
+{
+    list-style-type: none;
+    margin-top: 0;
+    top: 10%;
+    position: absolute;
+}
+
+#menu, #exit
+{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    background-color: transparent;
+}
+
+#menu > i, #exit > i
+{
+    top: 10px;
+}
+
+#navigation
+{
+    margin: 0;
+    top: 0px;
+    visibility: hidden;
+    position: absolute;
+    display: inline-block;
+    z-index: 5;
+    height: 100vh;
+    width: 300px;
+    transition: ease 0.3s;
+    background-color: #edf2f4;
+    opacity: 0.1;
+}
+
+#navigation.menuanimation
+{
+    opacity: 1;
+}
+
+
+/* Navigation */
+
+/* Highlighted */
+
+.highlighted
+{
+    border-radius: 15px;
+    max-width: 75vw;
+    min-width: 30vw;
+    background-color: #669BBC;
+    position: relative;
+    margin: auto;
+}
+
+.quizcollection
+{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.highlighted > p
+{
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.quizpattern
+{
+    position: relative;
+    display: inline-block;
+    left: 5px;
+    margin-right: 10px;
+    bottom: 5px;
+    width: calc(10em + 1px);
+    border-radius: 15px;
+    height: calc(8.5em + 1px);
+    background-color: rgb(51, 42, 44);
+    transition: ease-in 0.3s;
+}
+
+.quizpattern > img
+{
+    transition: ease-in 0.3s;
+    filter: blur(0px);
+    width: 10em;
+    height: 8.5em;
+    border-radius: 15px;
+}
+
+.quizpattern:hover
+{
+    filter: drop-shadow(2px 2px 4px #0a0042);
+}
+
+.quizpattern > img:hover
+{
+    filter: blur(2px);
+}
+
+.quizpattern > p:hover
+{
+    visibility: visible;
+}
+
+.titles
+{
+    visibility: hidden;
+    position: absolute;
+    color: #edf2f4;
+    text-shadow: 2px 2px 3px #003049;
+    width: calc(10em + 1px);
+    top: calc((8em + 1px) / 2);
+    margin: auto;
+    text-align: center;
+}
+
+/* Highlighted */
+
+/* Info */
+
+::-webkit-scrollbar
+{
+    width: 0;
+}
+
+#infomessage
+{
+    height: 95vh;
+}
+
+#monday
+{
+    position: absolute;
+    bottom: 5vh;
+    width: 60vw;
+    height: 70vh;
+    margin-left: 10%;
+    border-radius: 15px;
+    transform: scale(0.8);
+    transition: ease 1.5s;
+}
+
+#monday:hover
+{
+    position: absolute;
+    transform: scale(1.1) translateY(-90px);
+}
+
+/* Info */
